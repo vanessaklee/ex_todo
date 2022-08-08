@@ -10,7 +10,7 @@ defmodule ExTodo.Config do
 
   defstruct supported_codetags: ~w(NOTE TODO FIXME HACK BUG),
             error_codetags: ~w(FIXME BUG),
-            skip_patterns: [~r/\.git/, ~r/_build/, ~r/deps/, ~r/cover/, ~r/docs/, ~r/\.todo\.exs/]
+            skip_patterns: [~r/\.git/, ~r/_build/, ~r/deps/, ~r/cover/, ~r/docs/, ~r/\.todo\.exs/, ~r/todo.md/]
 
   @doc """
   Get the configuration defaults as a Config struct

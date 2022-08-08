@@ -16,7 +16,7 @@ defmodule Mix.Tasks.Todo do
       Config.config_file()
       |> load_config_file()
       |> merge_defaults()
-      |> ExTodo.CLI.run_report()
+      |> ExTodo.File.run_report()
 
     unless result do
       System.at_exit(fn _ ->
